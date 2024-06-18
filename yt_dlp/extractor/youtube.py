@@ -3823,7 +3823,7 @@ class YoutubeIE(YoutubeBaseInfoExtractor):
 
         for fmt in streaming_formats:
             if fmt.get('targetDurationSec'):
-                continue
+                pass
 
             itag = str_or_none(fmt.get('itag'))
             audio_track = fmt.get('audioTrack') or {}
